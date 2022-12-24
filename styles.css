@@ -1,0 +1,499 @@
+/********************* Flex Container *************************/
+.container-flex{
+    background-color: tomato;
+    display: flex;
+}
+
+.container-inline{
+    background-color: tomato;
+    display: inline-flex;
+}
+.container-flow{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    /*flex flow es un shortcut de flex-direction y flex-wrap*/
+    /*en este caso flex-flow tendria estas mismas propiedades*/
+    /*flex-direction: column;
+     flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+/********************* Flex direction *************************/
+.container-row{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-row-reverse{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-column{
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+}
+.container-column-reverse{
+    background-color: tomato;
+    height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/********************* Flex Flex wrap *************************/
+.container-nowrap{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+}
+.container-wrap{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.container-wrap-column{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.container-wrap-reverse{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;   
+}
+.container-wrap-reverse-column{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;   
+}
+
+
+/********************* Justify content *************************/
+.container-wrap-row-flex-start{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    /*ordena los items de izquieda a derecha, como tenemos flex-wrap: wrap; cuando se llene
+    la fila inicia otra abajo*/  
+    justify-content: flex-start;
+}
+
+.container-wrap-row-center{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: center;
+}
+
+.container-wrap-row-flex-end{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: flex-end;
+}
+
+.container-wrap-row-space-between{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+.container-wrap-row-space-around{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+}
+
+.container-wrap-row-space-evenly{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-evenly;
+}
+
+/********************* Align items *************************/
+.container-wrap-row-align-items-stretch{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;   
+    align-items: stretch;
+}
+
+.container-wrap-row-align-items-start{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-items: flex-start;
+}
+.container-wrap-row-align-items-center{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    /*con column se centran en eje x*/
+    /*flex-direction: column;*/
+    flex-wrap: wrap;   
+    align-items: center;
+}
+.container-wrap-row-align-items-end{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-items: flex-end;
+}
+.container-wrap-row-align-items-baseline{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-items: baseline;
+}
+
+/********************* Align content *************************/
+.container-wrap-row-align-content-stretch{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: stretch;
+}
+
+.container-wrap-row-align-content-flex-start{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: flex-start;
+}
+.container-wrap-row-align-content-center{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: center;
+}
+.container-wrap-row-align-content-flex-end{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: flex-end;
+}
+.container-wrap-row-align-content-space-between{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: space-between;
+}
+.container-wrap-row-align-content-space-around{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: space-around;
+}
+
+/********************* order *************************/
+.container-wrap-row-order{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+/********************* item order se aplican a los elementos item ************************/
+/* order se aplica a los items por default todos los items tienen un order 0 */
+/* en este caso asignamos un order 1 al segundo elemento de la clase .item*/
+.item:nth-child(2){
+    order: 1;
+   }
+
+   
+/********************* flex grow se aplica a los elementos item *************************/
+/*grow es el crecimineto proporcional de los items*/
+/*al crecer ocupa todo el contenedor padre*/
+.container-wrap-row-grow{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+/* flex grow se aplica a los elementos item */
+.item-grow{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    /*grow es proporcinal al % utilizado y al crecer ocupan todo el contenedor padre*/
+    /* width: 20%; */
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    flex-grow: 1;
+}
+
+.item-grow-2{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    width: 20%;
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    /*todos crecen proporcionalmente*/
+    flex-grow: 1;
+}
+/*el segundo item va a crecer proporcionalmente dos veces mas que los demas items*/
+.item-grow-2:nth-child(2){
+    /*si el padre no tiene flex-grow el hijo crecera dos veces mas su tamaño*/
+    flex-grow: 2; /*puede ser cualquier numero*/
+   }
+
+
+/********************* Flex shrink se aplica a los elementos item *************************/
+/*permite encoger = 1 o no encoger = 0 */
+.container-wrap-row-shrink{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+/* flex grow se aplica a los elementos item */
+.item-shrink-1{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    /*width: 20%;*/
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    /*el valor de flex box por default para shrink siempre es 1 que si permite encoger*/
+    flex-shrink: 1;
+}
+.item-shrink-0{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    /*width: 20%;*/
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    /*Ningun elemento se encogera*/
+    flex-shrink: 0;
+}
+
+
+.item-shrink-2{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    /*width: 20%;*/
+    border: medium solid silver;
+    box-sizing: border-box;
+    /*no permite encoger*/
+    flex-shrink: 0;
+}
+/*el segundo item si va a encoger*/
+.item-shrink-2:nth-child(2){
+    flex-shrink: 1; /*este item se permite encoger*/
+   }
+
+
+
+/********************* basis *************************/
+.container-wrap-row-flex-basis-auto{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.item-basis{
+    background-color: blanchedalmond;
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    /*lo elementos item ocupan el ancho de su contenido*/
+    flex-basis: auto;
+}
+
+.item-basis-px{
+    background-color: blanchedalmond;
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    /*basis es el ancho de los items el ancho porque el contenedor padre esta usando row filas*/
+    flex-basis: 100px;
+}
+
+/********************* Flex (shorthand) *************************/
+/*flex-shrink: no usa el ancho  width: para que funcione */
+.container-wrap-row-flex{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    
+    
+}
+.item-flex{
+    background-color: blanchedalmond;
+
+    border: medium solid silver;
+    box-sizing: border-box;
+    /*todos los items crecen proporcionalmente*/
+    flex-grow: 1;
+
+ 
+}
+.item-flex:nth-child(2){
+     /*flex-shrink: no usa el ancho  width:  */
+
+    /*(flex-grow flex-shrink flex-basis)*/
+         /*flex-grow: es el crecimiento proporcional de los items*/
+         /*flex-shrink: si enconger = 1  no encoger = 0 */
+         /*flex-basis: es el ancho de los item en px o auto*/
+    flex: 2 0 auto ;
+}
+
+/********************* Align self *************************/
+.container-wrap-row-align-self{
+    background-color: tomato;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    
+}
+
+.item-align-self{
+    background-color: blanchedalmond;
+    border: medium solid silver;
+    box-sizing: border-box;
+
+    font-size: 20px;
+    padding: 5px;
+}
+/*manipulamos a alineacion del item 2 con align-self*/
+.item-align-self:nth-child(1){
+    align-self: auto; /*la propiedades el item son las que hereda del padre*/
+}
+.item-align-self:nth-child(2){
+    align-self: flex-start; 
+}
+.item-align-self:nth-child(3){
+    align-self: center;
+}
+.item-align-self:nth-child(4){
+    align-self: flex-end;
+}
+.item-align-self:nth-child(5){
+    align-self: baseline;
+}
+.item-align-self:nth-child(6){
+    align-self: stretch;
+}
+
+
+/********************* item *************************/
+
+.item{
+    background-color: blanchedalmond;
+    /* 5 elementos del 20% van a ocupar el 100% */
+    width: 20%;
+    border: medium solid silver;
+
+    /* en css los bordes padding y margin suman a l tamaño del elemento*/
+    /*con  box-sizing: border-box indicamos que los margenes padding y bordes queden incluidos en el tamaño del elemento */
+    /*en este caso dentro del 20% de cada item para que quepan 5 */
+    box-sizing: border-box;
+}
+
+.item-column{
+    background-color: blanchedalmond;
+    /*en  flex-direction: column; manejamos las alturas */
+    height: 20%;
+    border: medium solid silver;
+
+    /* en css los bordes padding y margin suman a l tamaño del elemento*/
+    /*con  box-sizing: border-box indicamos que los margenes padding y bordes queden incluidos en el tamaño del elemento */
+    /*en este caso dentro del 5% de cada item para que quepan 5 */
+    box-sizing: border-box;
+}
+
+.item-aling{
+    background-color: blanchedalmond;
+    border: medium solid silver;
+    box-sizing: border-box;
+}

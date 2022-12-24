@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curso de flex box</title>
+</head>
+<body>
+    <a href="https://www.youtube.com/watch?v=AAtvnv6LNMk&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys">Ver Tutorial</a>
+    <a href="https://www.youtube.com/watch?v=RS2vn8bnqIQ">extensiones utiles</a>
+    <h1>display: flex</h1>
+    <h3>display flex, alinea los items en una sola fila, cada item solo ocupa el ancho que le corresponde en este caso cada item ocupa un 5%</h3>
+    <section class="container-flex">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h3>display flex, Si tememos dos container flex los maneja a cada uno en su fila correspondiente</h3>
+    <section class="container-flex">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <section class="container-flex">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h1>display: inline-flex</h1>
+    <h3>display inline-flex, maneja a cada contenedor padre en una sola fila </h3>
+    <h3>y los items ocupan solo el ancho que les corresponde</h3>
+    <section class="container-inline">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <section class="container-inline">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+
+
+    <h1>Flex direction</h1>
+    <h3>posee cuatro propiedades </h3>
+    <h3>flex-direction: row; esta propiedad es que flex utiliza por default, se puede indicar o no</h3>
+    <h3>flex-direction: row-reverse;</h3>
+    <h3>flex-direction: column;</h3>
+    <h3>flex-direction: column-reverse;</h3>
+    
+    <h2>flex-direction: row;</h2>
+    <section class="container-row">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <section class="container-row">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h2>flex-direction: row-reverse;</h2>
+    <section class="container-row-reverse">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <section class="container-row-reverse">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h2>flex-direction: column;</h2>
+    <section class="container-column">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <br>
+    <section class="container-column">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h2>flex-direction: column-reverse;</h2>
+    <section class="container-column-reverse">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <br>
+    <section class="container-column-reverse">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h1>Flex wrap</h1>
+    <h2>Tiene tres opciones:</h2>
+    <h2>wrap</h2>
+    <h2>nowrap</h2>
+    <h2>wrap-reverse</h2>
+    <a href="https://www.youtube.com/watch?v=lnWBQ3dMzhw&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=4">Video</a>
+   
+    <h2>flex-wrap: nowrap;</h2>
+    <h3>el valor por defecto de un contenedor flex es nowrap</h3>
+    <h3>es decir todo el contenido va en una sola fila como un simple display: flex</h3>
+    <section class="container-nowrap">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <br>
+    <h3>nowrap ajusta todos los items en una solo fila, Cuando la pantalla se hace muy pequña nowrap crea un scrollBar en la parte inferior del navegador</h3>
+    <section class="container-nowrap">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+        <article class="item">Flex Item 4 </article>
+        <article class="item">Flex Item 5 </article>
+        <article class="item">Flex Item 6 </article>
+        <article class="item">Flex Item 7 </article>
+        <article class="item">Flex Item 8 </article>
+        <article class="item">Flex Item 9 </article>
+        <article class="item">Flex Item 10 </article>
+        <article class="item">Flex Item 11 </article>
+        <article class="item">Flex Item 12 </article>
+        <article class="item">Flex Item 13 </article>
+        <article class="item">Flex Item 14 </article>
+        <article class="item">Flex Item 15 </article>
+        <article class="item">Flex Item 16 </article>
+        <article class="item">Flex Item 17 </article>
+        <article class="item">Flex Item 18 </article>
+        <article class="item">Flex Item 19 </article>
+    </section>
+
+    <h2>flex-wrap: wrap;</h2>
+    <h2>y utilizando flex-direction: row</h2>
+    <h3>Cuando ya no cabe un elemento en wrap lo baja a la siguiente fila</h3>
+    <h3>cuando utilizamos flex-direction: row; los porcentajes y espacios son manejados en el eje x es decir en fila</h3>
+    <h3>en el item manejamos el width el ancho en este caso estamos usando 20% para que quepan 5 elementos y ocupen un 100%</h3>
+    <section class="container-wrap">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+        <article class="item">Flex Item 4 </article>
+        <article class="item">Flex Item 5 </article>
+        <article class="item">Flex Item 6 </article>
+        <article class="item">Flex Item 7 </article>
+        <article class="item">Flex Item 8 </article>
+        <article class="item">Flex Item 9 </article>
+        <article class="item">Flex Item 10 </article>
+        <article class="item">Flex Item 11 </article>
+        <article class="item">Flex Item 12 </article>
+        <article class="item">Flex Item 13 </article>
+        <article class="item">Flex Item 14 </article>
+        <article class="item">Flex Item 15 </article>
+        <article class="item">Flex Item 16 </article>
+        <article class="item">Flex Item 17 </article>
+        <article class="item">Flex Item 18 </article>
+        <article class="item">Flex Item 19 </article>
+    </section> 
+
+    
+    <h2>flex-wrap: wrap;</h2>
+    <h2>y utilizando flex-direction: column</h2>
+    <h3>se agregan todos lo item que quepan en los height: 30vh; que tenemos de altura del contenedor</h3>
+    <section class="container-wrap-column">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+        <article class="item">Flex Item 4 </article>
+        <article class="item">Flex Item 5 </article>
+        <article class="item">Flex Item 6 </article>
+        <article class="item">Flex Item 7 </article>
+        <article class="item">Flex Item 8 </article>
+        <article class="item">Flex Item 9 </article>
+        <article class="item">Flex Item 10 </article>
+        <article class="item">Flex Item 11 </article>
+        <article class="item">Flex Item 12 </article>
+        <article class="item">Flex Item 13 </article>
+        <article class="item">Flex Item 14 </article>
+        <article class="item">Flex Item 15 </article>
+        <article class="item">Flex Item 16 </article>
+        <article class="item">Flex Item 17 </article>
+        <article class="item">Flex Item 18 </article>
+        <article class="item">Flex Item 19 </article>
+    </section> 
+
+    <h2>flex-wrap: wrap;</h2>
+    <h2>y utilizando flex-direction: column</h2>
+    <h2>indicando %de altura a los item</h2>
+    <h3>cuando utilizamos flex-direction: colmn; los porcentajes y espacios son manejados en el eje Y es decir en columna</h3>
+    <h3>en el item-column manejamos el height: 20%; la altura en este caso estamos usando 20% para que quepan 5 elementos y ocupen un 100% de la altura definida en el contenedor</h3>
+    <section class="container-wrap-column">
+        <article class="item-column">Flex Item 1 </article>
+        <article class="item-column">Flex Item 2 </article>
+        <article class="item-column">Flex Item 3 </article>
+        <article class="item-column">Flex Item 4 </article>
+        <article class="item-column">Flex Item 5 </article>
+        <article class="item-column">Flex Item 6 </article>
+        <article class="item-column">Flex Item 7 </article>
+        <article class="item-column">Flex Item 8 </article>
+        <article class="item-column">Flex Item 9 </article>
+        <article class="item-column">Flex Item 10 </article>
+        <article class="item-column">Flex Item 11 </article>
+        <article class="item-column">Flex Item 12 </article>
+        <article class="item-column">Flex Item 13 </article>
+        <article class="item-column">Flex Item 14 </article>
+        <article class="item-column">Flex Item 15 </article>
+        <article class="item-column">Flex Item 16 </article>
+        <article class="item-column">Flex Item 17 </article>
+        <article class="item-column">Flex Item 18 </article>
+        <article class="item-column">Flex Item 19 </article>
+    </section> 
+
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <h2>uilizando flex-direction: row;</h2>
+    <h3>recordemos que row trabaja en el eje x</h3>
+    <h3>cunado los items ya no caben se crea una nueva file pero en la parte de arriba</h3>
+       <section class="container-wrap-reverse">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+        <article class="item">Flex Item 4 </article>
+        <article class="item">Flex Item 5 </article>
+        <article class="item">Flex Item 6 </article>
+        <article class="item">Flex Item 7 </article>
+        <article class="item">Flex Item 8 </article>
+        <article class="item">Flex Item 9 </article>
+        <article class="item">Flex Item 10 </article>
+        <article class="item">Flex Item 11 </article>
+        <article class="item">Flex Item 12 </article>
+        <article class="item">Flex Item 13 </article>
+        <article class="item">Flex Item 14 </article>
+        <article class="item">Flex Item 15 </article>
+        <article class="item">Flex Item 16 </article>
+        <article class="item">Flex Item 17 </article>
+        <article class="item">Flex Item 18 </article>
+        <article class="item">Flex Item 19 </article>
+    </section> 
+
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <h2>uilizando flex-direction: column;</h2>
+    <h3>recordemos que column trabaja en el eje Y</h3>
+    <h3>cunado los items ya no caben se crea una nueva columna pero de derecha a izquierda</h3>
+       <section class="container-wrap-reverse-column">
+        <article class="item-column">Flex Item 1 </article>
+        <article class="item-column">Flex Item 2 </article>
+        <article class="item-column">Flex Item 3 </article>
+        <article class="item-column">Flex Item 4 </article>
+        <article class="item-column">Flex Item 5 </article>
+        <article class="item-column">Flex Item 6 </article>
+        <article class="item-column">Flex Item 7 </article>
+        <article class="item-column">Flex Item 8 </article>
+        <article class="item-column">Flex Item 9 </article>
+        <article class="item-column">Flex Item 10 </article>
+        <article class="item-column">Flex Item 11 </article>
+        <article class="item-column">Flex Item 12 </article>
+        <article class="item-column">Flex Item 13 </article>
+        <article class="item-column">Flex Item 14 </article>
+        <article class="item-column">Flex Item 15 </article>
+        <article class="item-column">Flex Item 16 </article>
+        <article class="item-column">Flex Item 17 </article>
+        <article class="item-column">Flex Item 18 </article>
+        <article class="item-column">Flex Item 19 </article>
+    </section> 
+
+    <h1>NOTA:</h1>
+    <h1>recordemos que se pueden hacer diferfentes combinaciones entre las propiedades de flex box</h1>
+    <h2>display: flex; flex-direction: row; flex-direction: column; flex-wrap  etc</h2>
+    
+    <a href="https://www.youtube.com/watch?v=lnWBQ3dMzhw&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=3">Video</a>
+
+    <h1>flex-flow</h1>
+    <h2>es un shortcut de flex-direction y flex-wrap  </h2>
+    <h3>en este caso flex-flow tendria estas mismas propiedades
+         flex-direction: column;
+         flex-wrap: wrap;</h3>
+    <section class="container-flow">
+        <article class="item-column">Flex Item 1 </article>
+        <article class="item-column">Flex Item 2 </article>
+        <article class="item-column">Flex Item 3 </article>
+        <article class="item-column">Flex Item 4 </article>
+        <article class="item-column">Flex Item 5 </article>
+        <article class="item-column">Flex Item 6 </article>
+        <article class="item-column">Flex Item 7 </article>
+        <article class="item-column">Flex Item 8 </article>
+        <article class="item-column">Flex Item 9 </article>
+        <article class="item-column">Flex Item 10 </article>
+        <article class="item-column">Flex Item 11 </article>
+        <article class="item-column">Flex Item 12 </article>
+        <article class="item-column">Flex Item 13 </article>
+        <article class="item-column">Flex Item 14 </article>
+        <article class="item-column">Flex Item 15 </article>
+        <article class="item-column">Flex Item 16 </article>
+        <article class="item-column">Flex Item 17 </article>
+        <article class="item-column">Flex Item 18 </article>
+        <article class="item-column">Flex Item 19 </article>
+    </section> 
+
+    
+
+    <h1>Justify content</h1>
+    <a href="https://www.youtube.com/watch?v=4eHB6O8d1R0&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=4">Video</a>
+    <h2>
+        <ul>
+            <li>justify-content: flex-start;</li>
+            <li>justify-content: center;</li>
+            <li>justify-content: flex-end;</li>
+            <li>justify-content: space-between;</li>
+            <li>justify-content: space-around;</li>
+            <li>justify-content: space-evenly;</li>
+        </ul> 
+    </h2>
+    <h2>justify-content: flex-start;</h2>
+    <h3>
+        ordena los items de izquieda a derecha, como tenemos flex-wrap: wrap; cuando se llene
+        la fila inicia otra abajo 
+    </h3>
+    <section class="container-wrap-row-flex-start">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+        <article class="item">Flex Item 4 </article>
+        <article class="item">Flex Item 5 </article>
+        <article class="item">Flex Item 6 </article>
+        <article class="item">Flex Item 7 </article> 
+    </section>
+    <h2>justify-content: center;</h2>
+    <section class="container-wrap-row-center">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <h2>justify-content: flex-end;</h2>
+    <section class="container-wrap-row-flex-end">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <h2>justify-content: space-between;</h2>
+    <section class="container-wrap-row-space-between">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <h2>justify-content: space-around;</h2>
+    <section class="container-wrap-row-space-around">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+    <h2>justify-content: space-evenly;</h2>
+    <section class="container-wrap-row-space-evenly">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+
+    <h1>Align items:</h1>
+       <h2>
+        <ul>
+            <li>align-items: stretch;</li>
+            <li>align-items: flex-start;</li>
+            <li>align-items: center;</li>
+            <li>align-items: flex-end;</li>
+            <li>align-items: baseline;</li>
+        </ul> 
+    </h2>
+    <h2>Align Items alinea por una sola fila a la vez y deja espacio entre gada fila</h2>
+    <h2>align-items: stretch;</h2>
+    <h3>stretch es el valor por defecto en flex box los items se adaptan al tamaño del padre</h3>
+    <h3>si cambiamos a flex-direction: column los items se adptan al ancho del contenedor</h3>
+    <section class="container-wrap-row-align-items-stretch">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 6 </article>
+        <article class="item-aling">Flex Item 7 </article>
+        <article class="item-aling">Flex Item 8 </article>
+    </section>
+    <h2>align-items: flex-start;</h2>
+    <h3>los items se alinean al inicio en su parte superior y unicamente ulizan el espacio que les corresponde</h3>
+    <section class="container-wrap-row-align-items-start">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 2 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 2 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+    </section>
+    <h2>align-items: center;</h2>
+    <h3>los items se alinean al centro del eje Ye alineando el centro de cada item</h3>
+    <h3>si quetemos centrar en X usamos column</h3>
+    <section class="container-wrap-row-align-items-center">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling" style="height: 20%;">Flex Item 2 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling" style="height: 20%;">Flex Item 6 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 7 </article>
+        <article class="item-aling">Flex Item 8 </article>
+        <article class="item-aling">Flex Item 9 </article>
+        <article class="item-aling" style="height: 20%;">Flex Item 10 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 11 </article>
+        <article class="item-aling">Flex Item 12 </article>
+    </section>
+    <h2>align-items: flex-end;</h2>
+    <h3>los items se alinean al final del contenedor padre</h3>
+    <section class="container-wrap-row-align-items-end">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling" style="height: 20%;">Flex Item 2 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+    </section>
+    <h2>align-items: baseline;</h2>
+    <h3>los items se alinean usando la linea base del texto</h3>
+    <section class="container-wrap-row-align-items-baseline">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 2 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+    </section>
+
+
+
+    <h1>Align content:</h1>
+    <h2>Alinea todo el grupo de filas a la vez no deja espacio entre filas</h2>
+       <h2>
+        <ul>
+            <li>align-content: stretch;</li>
+            <li>align-content: flex-start;</li>
+            <li>align-content: center;</li>
+            <li>align-content: flex-end;</li>
+            <li>align-content: space-between;</li>
+            <li>align-content: space-around;</li>
+        </ul> 
+    </h2>
+    <h2>align-content: stretch;</h2>
+    <a href="https://www.youtube.com/watch?v=ELP5l8IVSJo&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=5">Video</a>
+    <h3></h3>
+    <section class="container-wrap-row-align-content-stretch">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling">Flex Item 3 </article>
+        <article class="item-aling">Flex Item 4 </article>
+    </section>
+    <h2>align-content: flex-start;</h2>
+    <section class="container-wrap-row-align-content-flex-start">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+    </section>
+    <h2>align-content: center;</h2>
+    <section class="container-wrap-row-align-content-center">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+    </section>
+    <h2>align-content: flex-end;</h2>
+    <section class="container-wrap-row-align-content-flex-end">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+    </section>
+    <h2>align-content: space-between;</h2>
+    <section class="container-wrap-row-align-content-space-between">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+    </section>
+    <h2>align-content: space-around;</h2>
+    <section class="container-wrap-row-align-content-space-around">
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+        <article class="item-aling">Flex Item 1 </article>
+        <article class="item-aling">Flex Item 2 </article>
+        <article class="item-aling" style="height: 20%; font-size: 35px;">Flex Item 3 usando flex start, este item ocupa su propio tamaño </article>
+        <article class="item-aling">Flex Item 4 </article>
+        <article class="item-aling">Flex Item 5 </article>
+    </section>
+    
+    <h1>Order</h1>
+    <h2>Order se aplica a los elementos item</h2>
+    <h3>aplicamos un order 2 al segundo elemento, por lo que le envia al final, ya que es mayor que el order por default que es cero</h3>
+    <section class="container-wrap-row-order">
+        <article class="item">Flex Item 1 </article>
+        <article class="item">Flex Item 2 </article>
+        <article class="item">Flex Item 3 </article>
+    </section>
+
+    <h1>Flex grow</h1>
+    <h2>Flex Grow se aplica a los elementos item</h2>
+    <h3>factor de crecimiento flex-grow por default es cero</h3>
+    <h3>flex-grow: 1; ajusta los item al ancho del contenedor si usamos un % en su ancho los hace proporcionalmente</h3>
+    <section class="container-wrap-row-grow">
+        <article class="item-grow">Flex Item 1 </article>
+        <article class="item-grow">Flex Item 2 </article>
+        <article class="item-grow">Flex Item 3 </article>
+    </section>
+
+    <h3>flex-grow: 2; el item 2 crecera proporcionalmente dos veces mas que los demas</h3>
+    <section class="container-wrap-row-grow">
+        <article class="item-grow-2">Flex Item 1 </article>
+        <article class="item-grow-2">Flex Item 2 </article>
+        <article class="item-grow-2">Flex Item 3 </article>
+    </section>
+
+    <h1>Flex shrink</h1>
+    <h2>flex-shrink: 0; desactiva el encogimineto</h2>
+    <h2>flex-shrink: 1; activa el encogimiento</h2>
+    <h2>Flex shrink se aplica a los elementos item</h2>
+    <h2>Flex shrink no debe usar width</h2>
+    <h3>factor de encogimiento flex-shrink por default es 1 para que si se encogan los elementos si lo ponemos a cero los elementos no se encogeran</h3>
+    <h3>flex-shrink: 1; Todos los elementos se encojan</h3>
+    <h3>al reducir de tamaño la pantalla</h3>
+    <section class="container-wrap-row-shrink">
+        <article class="item-shrink-1">Flex Item 1 flex-shrink: 1; permite que los elementos se encojan </article>
+        <article class="item-shrink-1">Flex Item 2 flex-shrink: 1; permite que los elementos se encojan</article>
+        <article class="item-shrink-1">Flex Item 3 flex-shrink: 1; permite que los elementos se encojan </article>
+    </section>
+
+    <h3>flex-shrink: 0; Ningun elemento encogera</h3>
+    <section class="container-wrap-row-shrink">
+        <article class="item-shrink-0">Flex Item 1 flex-shrink: 1; No se encogen lo elementos </article>
+        <article class="item-shrink-0">Flex Item 2 flex-shrink: 1; No se encogen lo elementos</article>
+        <article class="item-shrink-0">Flex Item 3 flex-shrink: 1; No se encogen lo elementos </article>
+    </section>
+
+    <h3>solo el item-2 se encogera</h3>
+    <a href="https://www.youtube.com/watch?v=cN6O13okUww&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=7">Video</a>
+    <br><br>
+    <section class="container-wrap-row-shrink">
+        <article class="item-shrink-2">Flex Item 1 flex-shrink: 0; No se encogen lo elementos </article>
+        <article class="item-shrink-2">Flex Item 2 flex-shrink: 1; Si se encogen lo selementos</article>
+        <article class="item-shrink-2">Flex Item 3 flex-shrink: 0; No se encogen lo elementos</article>
+    </section>
+
+    <h1>Flex basis</h1>
+    <h2>representa el valor width en los elementos hijos si trtabajamos en flex row </h2>
+    <h2>si trabajamos con flex column entoces representa la altura</h2>
+    <h2>flex-basis: auto;</h2>
+    <h3>es el valor por defecto</h3>
+    <section class="container-wrap-row-flex-basis-auto">
+        <article class="item-basis">Flex Item 1 basis auto ocupar el anho de su contenido </article>
+        <article class="item-basis">Flex Item 2 flex-basis</article>
+        <article class="item-basis">Flex Item 3 </article>
+    </section>
+    <h2>flex-basis: tamañoEnPixels;</h2>
+    <h3>el ancho de los todos los items los definimos con basis con 100px, en este caso</h3>
+    <section class="container-wrap-row-flex-basis-auto">
+        <article class="item-basis-px">Flex Item 1 basis 100px</article>
+        <article class="item-basis-px">Flex Item 2 </article>
+        <article class="item-basis-px">Flex Item 3 </article>
+    </section>
+
+    <h1>Flex (shorthand)</h1>
+    <h2>Se aplica a los elementos hijo.</h2>
+    <h2>flex: 0 1 auto; (flex-grow flex-shrink flex-basis)</h2>
+    <h3>recordar que flex-shrink no debe usar width ancho para que funcione</h3>
+    <section class="container-wrap-row-flex">
+        <article class="item-flex">Flex Item 1 debre encoger </article>
+        <article class="item-flex">Este item no se debe encoger, flex-shrink no debe usar width  </article>
+        <article class="item-flex">Flex Item 3 debe encoger </article>
+    </section>
+
+
+    <h1>Align self</h1>
+    <h2>align-self: auto;</h2>
+    <h2>align-self: flex-start;</h2>
+    <h2>align-self: center;</h2>
+    <h2>align-self: flex-end;</h2>
+    <h2>align-self: baseline;</h2>
+    <h2>align-self: stretch;</h2>
+    <h3>controla la alineacion de un elemento hijo trabaja en el eje Y</h3>
+    <section class="container-wrap-row-align-self">
+        <article class="item-align-self">align-self: auto; </article>
+        <article class="item-align-self">align-self: flex-start; </article>
+        <article class="item-align-self">align-self: center; </article>
+        <article class="item-align-self">align-self: flex-end; </article>
+        <article class="item-align-self">align-self: baseline; </article>
+        <article class="item-align-self">align-self: stretch;  </article>
+    </section>
+
+    
+</body>
+</html>
